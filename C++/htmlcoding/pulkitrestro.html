@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Silver Spoon</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .restaurant-overview {
+            color: #555;
+            text-align: center;
+        }
+        table {
+            width: 80%;
+            margin: 0 auto;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid rgba(0, 0, 0, 0.875);
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: rgba(128, 128, 128, 0.867);
+        }
+        form {
+            width: 50%;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+        input, textarea, select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+        }
+        input[type="submit"] {
+            width: auto;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Title and Header -->
+    <header>
+        <h1>PULKIT'S RESTRO</h1>
+        <h2>The Best Dining Experience</h2>
+    </header>
+
+    <hr>
+
+    <!-- Restaurant Overview -->
+    <section>
+        <p class="restaurant-overview" style="color: 'darkblue'; text-align: 'center';">
+            Welcome to Silver Spoon, where we offer a diverse menu of delicious cuisines 
+            made from the freshest ingredients. Join us for an unforgettable dining experience.
+        </p>
+    </section>
+
+    <hr>
+
+    <!-- Google Map Location -->
+    <section>
+        <h3>Find Us</h3>
+        <iframe
+         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d221291.5479716016!2d77.97802058691894!3d29.931100799139703!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390947bf598bd9fb%3A0xb59ab81211b02be8!2sSilver%20Spoon%20Restaurant!5e0!3m2!1sen!2sin!4v1727282663947!5m2!1sen!2sin" 
+            width="600" height="450" style="border:0;" allowhttps:fullscreen="" loading="lazy"></iframe>
+    </section>
+
+    <hr>
+
+    <!-- Menu Section -->
+    <section>
+        <h3>Menu</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Dish Name</th>
+                    <th>Description</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Grilled Momos</td>
+                    <td>Freshly grilled momos served with teo chutneys</td>
+                    <td>250</td>
+                </tr>
+                <tr>
+                    <td>Panner Kesari Tikka</td>
+                    <td>Classic Indian dish merinated in indian spices</td>
+                    <td>310</td>
+                </tr>
+                <tr>
+                    <td>Veg Noddles</td>
+                    <td>Fresh wheat flour noddles served with seasonal vegetable and chinese sauces</td>
+                    <td>270</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <hr>
+
+    <!-- Top Dishes -->
+    <section>
+        <h3>Top 5 Dishes</h3>
+        <ol>
+            <li>Chiily Mushroom</li>
+            <li>Grilled Momos</li>
+            <li>Spring roll</li>
+            <li>Panner Kesari Tikka</li>
+            <li>Veg Noodles</li>
+        </ol>
+    </section>
+
+    <hr>
+
+    <!-- Reservations Form -->
+    <section>
+        <h3>Make a Reservation</h3>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="contact">Contact Number:</label>
+            <input type="text" id="contact" name="contact" required>
+
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="time">Time:</label>
+            <input type="time" id="time" name="time" required>
+
+            <label for="guests">Number of Guests:</label>
+            <select id="guests" name="guests">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+
+            <label for="requests">Special Requests:</label>
+            <textarea id="requests" name="requests" rows="4"></textarea>
+
+            <input type="submit" value="Book Now">
+        </form>
+    </section>
+
+    <hr>
+
+    <!-- Customer Feedback Form -->
+    <section>
+        <h3>Customer Feedback</h3>
+        <form>
+            <label for="feedback-name">Name:</label>
+            <input type="text" id="feedback-name" name="feedback-name">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+
+            <label for="rating">Rating (1-5):</label>
+            <input type="range" id="rating" name="rating" min="1" max="5">
+
+            <label for="comments">Comments:</label>
+            <textarea id="comments" name="comments" rows="4"></textarea>
+
+            <input type="submit" value="Submit Feedback">
+        </form>
+    </section>
+
+    <hr>
+
+    <!-- Favorite Links Section -->
+    <section>
+        <h3>Follow Us</h3>
+        <ul>
+            <li><a href="https://www.instagram.com" title="Follow us on Instagram" target="_blank">Instagram</a></li>
+            <li><a href="https://www.facebook.com" title="Like us on Facebook" target="_blank">Facebook</a></li>
+            <li><a href="https://www.twitter.com" title='Follow us on Twitter' target="_blank">Twitter</a></li>
+        </ul>
+    </section>
+
+    <!-- Self-closing tag example -->
+    <br />
+
+</body>
+</html>
